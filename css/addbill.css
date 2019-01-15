@@ -1,0 +1,201 @@
+.mui-control-content {
+  background-color: white;
+  min-height: 500px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.mui-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .mui-content .mui-slider {
+    height: 50%;
+    overflow: hidden; }
+    .mui-content .mui-slider .mui-slider-group .mui-table-view {
+      width: 100%;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */ }
+      .mui-content .mui-slider .mui-slider-group .mui-table-view dl {
+        width: 20%;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center; }
+        .mui-content .mui-slider .mui-slider-group .mui-table-view dl dt {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: #ccc;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          margin-top: 10px;
+          margin-bottom: 5px; }
+          .mui-content .mui-slider .mui-slider-group .mui-table-view dl dt span.mui-icon {
+            font-size: 30px;
+            line-height: 35px; }
+          .mui-content .mui-slider .mui-slider-group .mui-table-view dl dt.active {
+            background: #ffe146; }
+    .mui-content .mui-slider .mui-slider-indicator {
+      background: #ffe146;
+      height: 60px;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      .mui-content .mui-slider .mui-slider-indicator .tab {
+        width: 150px;
+        height: 40px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-align-items: center;
+        align-items: center;
+        overflow: hidden; }
+        .mui-content .mui-slider .mui-slider-indicator .tab > a {
+          text-align: center;
+          -webkit-flex: 1 1 0%;
+          flex: 1 1 0%;
+          font-size: 14px;
+          height: 100%;
+          line-height: 40px; }
+        .mui-content .mui-slider .mui-slider-indicator .tab > a.mui-active {
+          background: #ffe244;
+          background: #000; }
+    .mui-content .mui-slider #moneyNum {
+      text-align: center;
+      border-bottom: 2px solid #000;
+      margin: 0;
+      background: #ffe146;
+      height: 60px;
+      font-size: 40px;
+      font-weight: bold; }
+  .mui-content .write {
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    overflow: hidden;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    .mui-content .write .title {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-align-items: center;
+      align-items: center; }
+    .mui-content .write .keyboard-box {
+      -webkit-flex: 1 1 0%;
+      flex: 1 1 0%;
+      overflow: hidden;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-flex-direction: column;
+      flex-direction: column; }
+      .mui-content .write .keyboard-box .keyboard-remarks {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
+      .mui-content .write .keyboard-box .keyboard {
+        -webkit-flex: 1 1 0%;
+        flex: 1 1 0%;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */ }
+        .mui-content .write .keyboard-box .keyboard > div:nth-child(1) {
+          -webkit-flex: 1 1 0%;
+          flex: 1 1 0%;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-flex-direction: column;
+          flex-direction: column; }
+          .mui-content .write .keyboard-box .keyboard > div:nth-child(1) > ul {
+            display: flex;
+            /* NEW, Spec - Opera 12.1, Firefox 20+ */
+            display: -webkit-flex;
+            /* NEW - Chrome */
+            -webkit-align-items: center;
+            align-items: center;
+            height: 25%; }
+            .mui-content .write .keyboard-box .keyboard > div:nth-child(1) > ul > li {
+              height: 100%;
+              -webkit-flex: 1 1 0%;
+              flex: 1 1 0%;
+              text-align: center;
+              margin: 3px;
+              border: 1px solid #ccc;
+              display: flex;
+              /* NEW, Spec - Opera 12.1, Firefox 20+ */
+              display: -webkit-flex;
+              /* NEW - Chrome */
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-align-items: center;
+              align-items: center; }
+        .mui-content .write .keyboard-box .keyboard > div:nth-child(2) {
+          width: 70px;
+          border: 1px solid #ccc;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-align-items: center;
+          align-items: center; }

@@ -1,0 +1,204 @@
+.mui-bar-tab ~ .mui-content {
+  height: 100%; }
+
+.mui-control-content.mui-active {
+  height: 100%; }
+
+.mui-off-canvas-wrap .mui-bar {
+  height: 200px;
+  padding: 0; }
+
+.mui-off-canvas-wrap .mui-bar .nav-top {
+  height: 150px;
+  background: #ffe244;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px; }
+  .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(1) {
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    font-size: 10px;
+    height: 40px;
+    -webkit-align-items: center;
+    align-items: center; }
+    .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(1) > div:nth-child(2) {
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-justify-content: space-between;
+      justify-content: space-between; }
+      .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+        padding: 2px 10px;
+        border: 1px solid #000;
+        border-radius: 14px;
+        margin-right: 10px; }
+      .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+        padding: 2px 10px;
+        border: 1px solid #000;
+        border-radius: 14px; }
+  .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(2) > span:nth-child(1) {
+    font-size: 25px; }
+  .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(2) > span:nth-child(2) {
+    font-size: 15px; }
+  .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(3) {
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 40px; }
+    .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(3) > span:nth-child(1) {
+      font-size: 25px; }
+    .mui-off-canvas-wrap .mui-bar .nav-top > div:nth-child(3) > span:nth-child(2) {
+      font-size: 15px; }
+
+.mui-off-canvas-wrap .mui-bar .nav-bottom {
+  height: 50px;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px; }
+  .mui-off-canvas-wrap .mui-bar .nav-bottom .mui-icon {
+    width: 50px; }
+  .mui-off-canvas-wrap .mui-bar .nav-bottom > span {
+    width: 50px; }
+  .mui-off-canvas-wrap .mui-bar .nav-bottom .tab {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden; }
+    .mui-off-canvas-wrap .mui-bar .nav-bottom .tab > span {
+      text-align: center;
+      -webkit-flex: 1 1 0%;
+      flex: 1 1 0%;
+      font-size: 14px;
+      height: 100%;
+      line-height: 40px; }
+    .mui-off-canvas-wrap .mui-bar .nav-bottom .tab > span.current {
+      background: #ffe244; }
+
+.mui-bar-nav ~ .mui-content {
+  padding-top: 200px;
+  background: #fff;
+  height: 100%;
+  overflow-y: auto; }
+  .mui-bar-nav ~ .mui-content .day-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    overflow-y: auto; }
+    .mui-bar-nav ~ .mui-content .day-box .bill-content .title {
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #ccc;
+      height: 40px;
+      -webkit-align-items: center;
+      align-items: center; }
+      .mui-bar-nav ~ .mui-content .day-box .bill-content .title > p {
+        margin: 0; }
+    .mui-bar-nav ~ .mui-content .day-box .bill-content .bill-item {
+      height: 80px;
+      border-bottom: 1px solid #ccc; }
+      .mui-bar-nav ~ .mui-content .day-box .bill-content .bill-item .mui-slider-handle {
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center; }
+        .mui-bar-nav ~ .mui-content .day-box .bill-content .bill-item .mui-slider-handle > p:nth-child(1) {
+          margin: 0;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          -webkit-align-items: center;
+          align-items: center; }
+          .mui-bar-nav ~ .mui-content .day-box .bill-content .bill-item .mui-slider-handle > p:nth-child(1) > span:nth-child(1) {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 50px;
+            font-size: 40px;
+            background: #ffe244; }
+          .mui-bar-nav ~ .mui-content .day-box .bill-content .bill-item .mui-slider-handle > p:nth-child(1) > span:nth-child(2) {
+            margin-left: 10px;
+            color: #000;
+            font-size: 17px; }
+        .mui-bar-nav ~ .mui-content .day-box .bill-content .bill-item .mui-slider-handle > p:nth-child(2) {
+          font-size: 20px;
+          margin: 0;
+          color: #ff7676; }
+          .mui-bar-nav ~ .mui-content .day-box .bill-content .bill-item .mui-slider-handle > p:nth-child(2).current {
+            color: green; }
+
+#addBill {
+  position: fixed;
+  z-index: 20;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 35px;
+  background: #ffe244;
+  margin-left: -30px;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center; }
+  #addBill > span.mui-icon {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px; }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/libs/require.js" data-main="./js/addbill"></script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="css/mui.picker.min.css" rel="stylesheet" />
+    <link href="css/addbill.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="mui-content">
+        <div id="slider" class="mui-slider">
+            <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <div class="tab" id="tab">
+                    <a class="mui-control-item mui-active" href="#item1mobile" data-id="支出">
+                            支出
+                        </a>
+                    <a class="mui-control-item" href="#item2mobile" data-id="收入">
+                            收入
+                        </a>
+                    <a class="mui-control-item" href="#item3mobile" data-id="转账">
+                            转账
+                        </a>
+                </div>
+
+            </div>
+            <!-- <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div> -->
+            <input type="text" value="0.00" id="moneyNum">
+            <div class="mui-slider-group">
+                <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                    <div id="scroll1" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <ul class="mui-table-view" id="zBox">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="item2mobile" class="mui-slider-item mui-control-content">
+                    <div id="scroll2" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <ul class="mui-table-view" id="sBox">
+                                22222222222222
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="item3mobile" class="mui-slider-item mui-control-content">
+                    <div id="scroll3" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <ul class="mui-table-view">
+                                333333333333333
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="write">
+            <div class="title">
+                <p>
+                    <span class=""></span>
+                    <span>11月08日</span>
+                </p>
+                <p>
+                    <span class=""></span>
+                    <span>个人账单</span>
+                </p>
+                <p>
+                    <span class=""></span>
+                    <span>不选账户</span>
+                </p>
+            </div>
+            <div class="keyboard-box">
+                <div class="keyboard-remarks">
+                    <label for="remarks">备注：</label>
+                    <input type="text" id="btitle">
+                    <span class=""></span>
+                </div>
+                <div class="keyboard" id="keyboard">
+                    <div>
+                        <ul>
+                            <li class="num">1</li>
+                            <li class="num">2</li>
+                            <li class="num">3</li>
+                        </ul>
+                        <ul>
+                            <li class="num">4</li>
+                            <li class="num">5</li>
+                            <li class="num">6</li>
+                        </ul>
+                        <ul>
+                            <li class="num">7</li>
+                            <li class="num">8</li>
+                            <li class="num">9</li>
+                        </ul>
+                        <ul>
+                            <li class="dian">.</li>
+                            <li class="num">0</li>
+                            <li class="remove">X</li>
+                        </ul>
+                    </div>
+                    <div class="confirm" id="confirm1" data-type="expend">确定</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

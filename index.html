@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="./js/libs/require.js" data-main="./js/index"></script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="css/mui.picker.min.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-email"></span>
+            <span class="mui-tab-label">消息</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">通讯录</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">设置</span>
+        </a>
+    </nav>
+    <div id="addBill"><span class="mui-icon mui-icon-plusempty"></span></div>
+
+    <div class="mui-content">
+        <div id="tabbar" class="mui-control-content mui-active">
+
+            <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+                <!--侧滑菜单部分-->
+                <aside id="offCanvasSide" class="mui-off-canvas-left">
+                    <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div class="title">侧滑导航</div>
+                            <div class="content">
+                                这是可拖动式侧滑菜单示例，你可以在这里放置任何内容；关闭侧滑菜单有多种方式： 1.在手机屏幕任意位置向左拖动(drag)；2.点击本侧滑菜单页之外的任意位置; 3.点击如下红色按钮
+                                <span class="android-only">；4.Android手机按back键；5.Android手机按menu键
+													</span>。
+                                <p style="margin: 10px 15px;">
+                                    <button id="offCanvasHide" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">关闭侧滑菜单</button>
+                                </p>
+
+                            </div>
+                            <div class="title" style="margin-bottom: 25px;">侧滑列表示例</div>
+                            <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">
+															Item 1
+														</a>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">
+															Item 2
+														</a>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">
+															Item 3
+														</a>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">
+															Item 4
+														</a>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">
+															Item 5
+														</a>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">
+															Item 6
+														</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <!--主界面部分-->
+                <div class="mui-inner-wrap">
+                    <header class="mui-bar mui-bar-nav">
+                        <div>
+                            <div class="nav-top">
+                                <div>
+                                    <span>本月支出(元)</span>
+                                    <div>
+                                        <div id="setType"><span id="checkType">月</span>V</div>
+                                        <div id="setBtn" data-type="month"><span id="setYear">2019</span><span id="setMonth">-01</span>V</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span id="zcAll">388</span>
+                                    <span id="zcAlldian">.00</span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>本月收入</span>
+                                        <span id="srAll">1500.00</span>
+                                    </div>
+                                    <div>
+                                        <span>本月结余</span>
+                                        <span id="jieyu">1122.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-bottom">
+                                <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+                                <div class="tab">
+                                    <span class="current">账单</span>
+                                    <span>图标</span>
+                                </div>
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </header>
+                    <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+                        <div>
+                            <div class="day-box">
+
+
+
+                                <ul id="OA_task_1" class="mui-table-view bill-content">
+                                    <!-- <div class="title">
+                                        <p>
+                                            <span>01</span>月
+                                            <span>09</span>日
+                                        </p>
+                                        <p>
+                                            <span>支出</span>
+                                            <span>155.00</span>
+                                        </p>
+                                    </div>
+                                    <li class="mui-table-view-cell bill-item">
+                                        <div class="mui-slider-right mui-disabled">
+                                            <a class="mui-btn mui-btn-red">删除</a>
+                                        </div>
+                                        <div class="mui-slider-handle">
+                                            <p>
+                                                <span class="mui-icon mui-icon-weixin"></span>
+                                                <span>购物</span>
+                                            </p>
+                                            <p>85.00</p>
+                                        </div>
+
+                                    </li> -->
+
+                                </ul>
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- off-canvas backdrop -->
+                    <div class="mui-off-canvas-backdrop"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="tabbar-with-chat" class="mui-control-content">
+            <div class="title">这是div模式选项卡中的第2个子页面，该页面展示一个消息列表</div>
+
+            <ul class="mui-table-view mui-table-view-chevron">
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 1</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 2</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 3</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 4</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 5</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 6</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 7</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 8</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 9</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 10</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 11</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 12</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 13</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 14</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 15</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 16</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 17</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 18</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 19</a></li>
+                <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 20</a></li>
+            </ul>
+
+        </div>
+        <div id="tabbar-with-contact" class="mui-control-content">
+            <div class="title">这是div模式选项卡中的第3个子页面，该页面展示一个通讯录示例.</div>
+            <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+                <li class="mui-table-view-cell">
+                    <div class="mui-slider-cell">
+                        <div class="oa-contact-cell mui-table">
+                            <div class="oa-contact-avatar mui-table-cell">
+                                <!-- <img src="../images/60x60.gif" /> -->
+                            </div>
+                            <div class="oa-contact-content mui-table-cell">
+                                <div class="mui-clearfix">
+                                    <h4 class="oa-contact-name">叶文洁</h4>
+                                    <span class="oa-contact-position mui-h6">董事长</span>
+                                </div>
+                                <p class="oa-contact-email mui-h6">
+                                    yewenjie@sina.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div class="mui-slider-cell">
+                        <div class="oa-contact-cell mui-table">
+                            <div class="oa-contact-avatar mui-table-cell">
+                                <!-- <img src="../images/60x60.gif" /> -->
+                            </div>
+                            <div class="oa-contact-content mui-table-cell">
+                                <div class="mui-clearfix">
+                                    <h4 class="oa-contact-name">艾AA</h4>
+                                    <span class="oa-contact-position mui-h6">总经理</span>
+                                </div>
+                                <p class="oa-contact-email mui-h6">
+                                    aaa@163.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div class="mui-slider-cell">
+                        <div class="oa-contact-cell mui-table">
+                            <div class="oa-contact-avatar mui-table-cell">
+                                <!-- <img src="../images/60x60.gif" /> -->
+                            </div>
+                            <div class="oa-contact-content mui-table-cell">
+                                <div class="mui-clearfix">
+                                    <h4 class="oa-contact-name">罗辑</h4>
+                                    <span class="oa-contact-position mui-h6">员工</span>
+                                </div>
+                                <p class="oa-contact-email mui-h6">
+                                    luoji@126.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div class="mui-slider-cell">
+                        <div class="oa-contact-cell mui-table">
+                            <div class="oa-contact-avatar mui-table-cell">
+                                <!-- <img src="../images/60x60.gif" /> -->
+                            </div>
+                            <div class="oa-contact-content mui-table-cell">
+                                <div class="mui-clearfix">
+                                    <h4 class="oa-contact-name">云天明</h4>
+                                    <span class="oa-contact-position mui-h6">员工</span>
+                                </div>
+                                <p class="oa-contact-email mui-h6">
+                                    ytm@163.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell">
+                    <div class="mui-slider-cell">
+                        <div class="oa-contact-cell mui-table">
+                            <div class="oa-contact-avatar mui-table-cell">
+                                <!-- <img src="../images/60x60.gif" /> -->
+                            </div>
+                            <div class="oa-contact-content mui-table-cell">
+                                <div class="mui-clearfix">
+                                    <h4 class="oa-contact-name">史强</h4>
+                                    <span class="oa-contact-position mui-h6">员工</span>
+                                </div>
+                                <p class="oa-contact-email mui-h6">
+                                    shiqiang@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="tabbar-with-map" class="mui-control-content">
+            <div class="title">这是div模式选项卡中的第4个子页面，该页面展示一个常见的设置示例.</div>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+					新消息通知
+				</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+					隐私
+				</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+					通用
+				</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view" style="margin-top: 25px;">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+					关于mui
+				</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view" style="margin-top: 25px;">
+                <li class="mui-table-view-cell">
+                    <a style="text-align: center;color: #FF3B30;">
+					退出登录
+				</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

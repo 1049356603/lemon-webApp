@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="./css/mui.picker.min.css" />
+
+	<script src="./js/mui.picker.min.js"></script>
+
+    
+</head>
+<body>
+	<button id="btn">
+	哈哈	
+	</button>
+	<script type="text/javascript" charset="utf-8">
+	  	// mui.init();
+		btn.onclick = function(){
+			  var dtPicker = new mui.DtPicker({type:"aa"}); 
+			dtPicker.show(function (selectItems) { 
+			    console.log(selectItems.y);
+				})
+		}
+	</script>
+</body>
+</html>
